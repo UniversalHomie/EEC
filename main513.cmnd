@@ -1,0 +1,40 @@
+! Detroit Tune for PYTHIA 8
+
+
+! General settings
+Random:seed = 12345
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 5000.0  
+PhaseSpace:pTHatMin = 100
+PhaseSpace:pTHatMax = 600
+
+! PDF settings
+PDF:pSet = 17
+
+! Hard process (example: dijet)
+HardQCD:all = on
+
+! Parton shower settings
+SpaceShower:rapidityOrder = on
+SpaceShower:alphaSvalue = 0.127
+
+! Underlying event parameters (based on Detroit tune)
+MultipartonInteractions:pT0Ref = 1.40
+MultipartonInteractions:ecmPow = 0.135
+MultipartonInteractions:bProfile = 2
+MultipartonInteractions:alphaSvalue = 0.127
+MultipartonInteractions:coreRadius = 0.56
+MultipartonInteractions:coreFraction = 0.78
+ColourReconnection:range = 5.4
+
+
+! Final-state radiation
+TimeShower:alphaSvalue = 0.127
+
+! Output settings
+Stat:showProcessLevel = on
+Stat:showErrors = on
+
+! Event generation
+Main:numberOfEvents = 1000
