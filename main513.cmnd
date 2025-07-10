@@ -2,7 +2,7 @@
 
 
 ! General settings
-Random:seed = 12345
+Random:seed = 122197
 Beams:idA = 2212
 Beams:idB = 2212
 Beams:eCM = 5000.0  
